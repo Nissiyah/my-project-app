@@ -15,7 +15,12 @@ function Container() {
             you love.
           </p>
           <p className="helloo">
-            SHOP NOW <img className="next" src="../images/right-arrow.png" />
+            SHOP NOW{" "}
+            <img
+              className="next"
+              src="../images/right-arrow.png"
+              alt="next-arrow"
+            />
           </p>
           <div className="arrow">
             <span>

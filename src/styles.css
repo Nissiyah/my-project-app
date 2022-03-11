@@ -1,0 +1,106 @@
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Spartan", sans-serif;
+}
+
+.first-div {
+  background-color: rgb(223, 213, 213);
+  height: 80vh;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.group {
+  display: flex;
+  height: 65%;
+}
+.groups {
+  display: flex;
+  height: 35%;
+}
+
+.third-div {
+  width: 60%;
+  background-color: rgb(168, 168, 168);
+  background-image: url("../public/images/desktop-image-hero-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.fourth-div {
+  width: 40%;
+  background-color: aliceblue;
+  text-align: center;
+  color: gray;
+  font-weight: 500;
+  padding-left: 80px;
+  padding-right: 80px;
+  position: relative;
+}
+
+.fifth-div {
+  width: 30%;
+  background-color: black;
+  background-image: url("../public/images/image-about-dark.jpg");
+}
+
+.sixth-div {
+  width: 40%;
+  background-color: aliceblue;
+}
+
+.seventh-div {
+  width: 30%;
+  background-color: rgb(168, 168, 168);
+}
+
+h1 {
+  color: black;
+  padding-top: 80px;
+}
+.hello {
+  opacity: 0.7;
+  text-align: left;
+  line-height: 2em;
+}
+
+.helloo {
+  text-align: left;
+  letter-spacing: 8px;
+  /* padding-top: 20px; */
+  font-size: small;
+  justify-content: space-around;
+}
+.arrow {
+  width: 120px;
+  height: 60px;
+  background-color: black;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+.left {
+  position: absolute;
+  width: 20px;
+  color: white;
+}
+
+.right {
+  position: absolute;
+  width: 20px;
+  color: white;
+}
+.next {
+  position: relative;
+  width: 50px;
+  color: black;
+  padding-top: 20px;
+  padding-left: 10px;
+}

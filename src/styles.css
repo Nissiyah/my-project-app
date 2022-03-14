@@ -5,6 +5,7 @@ body {
   margin: 0;
   font-family: "Quicksand", sans-serif;
   font-family: "Spartan", sans-serif;
+  background-image: url("../public/images/cloud.jpg");
 }
 
 .first-div {
@@ -14,6 +15,7 @@ body {
   margin-bottom: 5%;
   margin-left: 50px;
   margin-right: 50px;
+  width: 1440px;
 }
 
 .group {
@@ -54,16 +56,34 @@ body {
 .sixth-div {
   width: 40%;
   background-color: aliceblue;
+  justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: small;
 }
 
 .seventh-div {
   width: 30%;
   background-color: rgb(168, 168, 168);
+  background-image: url("../public/images/image-about-light.jpg");
 }
 
 h1 {
   color: black;
-  padding-top: 80px;
+  padding-top: 40px;
+}
+.ugowork {
+  display: flex;
+  /* opacity: 0.7; */
+  /* padding-top: 20px; */
+  letter-spacing: 8px;
+  font-size: small;
+  /* justify-content: space-around; */
+  /* text-align: center; */
+  align-items: center;
+}
+.ugowork span {
+  padding-right: 25px;
 }
 .hello {
   opacity: 0.7;
@@ -71,36 +91,74 @@ h1 {
   line-height: 2em;
 }
 
-.helloo {
+/* .helloo {
   text-align: left;
   letter-spacing: 8px;
-  /* padding-top: 20px; */
+  padding-top: 20px;
   font-size: small;
   justify-content: space-around;
-}
+} */
 .arrow {
-  width: 120px;
-  height: 60px;
-  background-color: black;
+  width: 150px;
+  height: 40px;
+  background-color: white;
   left: 0;
   bottom: 0;
   position: absolute;
+  padding-top: 20px;
 }
 .left {
   position: absolute;
-  width: 20px;
-  color: white;
+  width: 25px;
+  background-color: white;
+  /* width: 24px; */
+  padding-left: 20px;
 }
 
 .right {
-  position: absolute;
+  position: relative;
   width: 20px;
-  color: white;
+  background-color: white;
+  /* width: 30px; */
+  padding-right: 20px;
 }
 .next {
-  position: relative;
+  /* position: relative; */
   width: 50px;
   color: black;
-  padding-top: 20px;
-  padding-left: 10px;
+  /* padding-left: 13em; */
+  /* float: left; */
+}
+
+.header {
+  padding-top: 40px;
+  letter-spacing: 8px;
+}
+.paragraph {
+  opacity: 0.9;
+  line-height: 2em;
+  text-align: left;
+  color: gray;
+  font-weight: 500;
+}
+li {
+  color: white;
+  display: inline;
+  padding: 20px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+.list {
+  padding-top: 40px;
+}
+.flist {
+  font-size: 30px;
+}
+
+.leftspan {
+  float: left;
+}
+.rightspan {
+  float: right;
 }

@@ -4,7 +4,15 @@ function Container() {
   return (
     <div class="first-div">
       <div class="group">
-        <div class="third-div"></div>
+        <div class="third-div">
+          <div className="list">
+            <li className="flist">room</li>
+            <li>home</li>
+            <li>shop</li>
+            <li>about</li>
+            <li>contact</li>
+          </div>
+        </div>
         <div class="fourth-div">
           <h1>Discover innovative ways to decorate</h1>
           <p className="hello">
@@ -14,25 +22,23 @@ function Container() {
             our collection and make your property a reflection of you and what
             you love.
           </p>
-          <p className="helloo">
-            SHOP NOW{" "}
+
+          <div className="ugowork">
+            <span>SHOP NOW</span>
             <img
               className="next"
               src="../images/right-arrow.png"
               alt="next-arrow"
             />
-          </p>
+          </div>
+
           <div className="arrow">
-            <span>
+            <span className="leftspan">
+              <img className="left" src="../images/left.png" alt="left-arrow" />
+            </span>
+            <span className="rightspan">
               <img
                 className="right"
-                src="../images/left.png"
-                alt="left-arrow"
-              />
-            </span>
-            <span>
-              <img
-                className="left"
                 src="../images/next.png"
                 alt="right-arrow"
               />
@@ -42,7 +48,17 @@ function Container() {
       </div>
       <div class="groups">
         <div class="fifth-div"></div>
-        <div class="sixth-div"></div>
+        <div class="sixth-div">
+          <h4 className="header">ABOUT OUR FUNITURE</h4>
+          <p className="paragraph">
+            Our multifunctional collection blends design and function to suit
+            your individual taste. Make each room unique, or pick a cohesive
+            theme that best express your interests and what inspires you. Find
+            the furniture pieces you need, from traditional to contemporary
+            styles or anything in between. Product specialists are available to
+            help you create your dream space.
+          </p>
+        </div>
         <div class="seventh-div"></div>
       </div>
     </div>

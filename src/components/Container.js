@@ -1,22 +1,17 @@
 import React, { useEffect, useState } from "react";
 
-function handleClick(link) {
-  window.location.href = link;
-}
-
 function Container() {
-  const slideImages = [
-    "/images/desktop-image-hero-1.jpg",
-    "/images/desktop-image-hero-2.jpg",
-    "/images/desktop-image-hero-3.jpg",
-  ];
-
   const [slideNo, setSlide] = useState(0);
 
   // const [currentImage, setCurrentImage] = useState(slideImages[0]);
 
   useEffect(
     function () {
+      const slideImages = [
+        "/images/desktop-image-hero-1.jpg",
+        "/images/desktop-image-hero-2.jpg",
+        "/images/desktop-image-hero-3.jpg",
+      ];
       // setCurrentImage(slideImages[slideNo]);
       let changeDiv = document.getElementById("changeable");
       changeDiv.style.backgroundImage = "url(" + slideImages[slideNo] + ")";

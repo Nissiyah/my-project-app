@@ -1,10 +1,50 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+
+function handleClick(link) {
+  window.location.href = link;
+}
 
 function Container() {
+  const slideImages = [
+    "/images/desktop-image-hero-1.jpg",
+    "/images/desktop-image-hero-2.jpg",
+    "/images/desktop-image-hero-3.jpg",
+  ];
+
+  const [slideNo, setSlide] = useState(0);
+
+  // const [currentImage, setCurrentImage] = useState(slideImages[0]);
+
+  useEffect(
+    function () {
+      // setCurrentImage(slideImages[slideNo]);
+      let changeDiv = document.getElementById("changeable");
+      changeDiv.style.backgroundImage = "url(" + slideImages[slideNo] + ")";
+    },
+    [slideNo]
+  );
+  function leftArrowClick() {
+    if (slideNo === 0) {
+    } else {
+      setSlide(slideNo - 1);
+    }
+  }
+
+  function rightArrowClick() {
+    if (slideNo === 2) {
+    } else {
+      setSlide(slideNo + 1);
+    }
+  }
+
   return (
-    <div class="first-div">
-      <div class="group">
-        <div class="third-div">
+    <div className="first-div">
+      <div className="group">
+        <div
+          className="third-div"
+          id="changeable"
+          // style={{ backgroundImage: "url(" + currentImage + ")" }}
+        >
           <div className="list">
             <li className="flist">room</li>
             <li>home</li>
@@ -13,7 +53,7 @@ function Container() {
             <li>contact</li>
           </div>
         </div>
-        <div class="fourth-div">
+        <div className="fourth-div">
           <h1>Discover innovative ways to decorate</h1>
           <p className="hello">
             We provide unmatched quality, comfort, and style for property owners
@@ -34,10 +74,16 @@ function Container() {
 
           <div className="arrow">
             <span className="leftspan">
-              <img className="left" src="../images/left.png" alt="left-arrow" />
+              <img
+                onClick={leftArrowClick}
+                className="left"
+                src="../images/left.png"
+                alt="left-arrow"
+              />
             </span>
             <span className="rightspan">
               <img
+                onClick={rightArrowClick}
                 className="right"
                 src="../images/next.png"
                 alt="right-arrow"
@@ -46,9 +92,9 @@ function Container() {
           </div>
         </div>
       </div>
-      <div class="groups">
-        <div class="fifth-div"></div>
-        <div class="sixth-div">
+      <div className="groups">
+        <div className="fifth-div"></div>
+        <div className="sixth-div">
           <h4 className="header">ABOUT OUR FUNITURE</h4>
           <p className="paragraph">
             Our multifunctional collection blends design and function to suit
@@ -59,7 +105,7 @@ function Container() {
             help you create your dream space.
           </p>
         </div>
-        <div class="seventh-div"></div>
+        <div className="seventh-div"></div>
       </div>
     </div>
   );
